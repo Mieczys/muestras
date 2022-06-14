@@ -1,0 +1,75 @@
+
+*/{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root{
+  --pri: #023440;
+  --sec: #ff2525;
+  --ter: #f0edcc;
+  --fou: #ffc03d;
+  --fif: #e7eefb;
+}
+.album{
+  background: linear-gradient( to bottom var(--pri), #034859);
+}
+.navbar{
+  background: var(--pri);
+}
+#navbarHeader{
+  background: #034859;
+  color:var(--fif);
+}
+
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+  
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+  color: white;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+#fotofondo{
+  background-image: url(./images/fondoe.jpg);
+  
+}
+.muted{
+  color: white;
+  font-size: 17px;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    
+  }
+}
