@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(to bottom, #4fd1c5, #2c7a7b);
+    font-family: 'Marck Script', cursive;
+    font-family: 'Lora', serif;
+}
+
+/*NAVBAR-MEDIA----------------*/
+.navbar-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index:4;
+}
+  
+.navbar-media a {
+    display: block;
+    height:40px;
+    width:40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 1px;
+    margin: 3px;
+    border-radius:100%; 
+    box-shadow: turquoise 2px 2px;
+    background-color: black;
+}
+
+i{
+    color:#2c7a7b;
+    margin-top: 7px;
+    vertical-align: middle;
+}
+  
+.navbar-media a:hover {
+    background: #ddd;
+    box-shadow: turquoise 4px 4px;
+    margin-bottom:5px;
+}
+.navbar-media a:active{
+    background: blue;
+    box-shadow: turquoise 4px 4px;
+    margin-bottom:5px;
+}
+
+section, footer {
+    margin-bottom: 30px;
+}
+  
+/*SHOWCASE--------------------*/
+.highlight{
+    color: #5c8a03;
+}
+.highlight1{
+    color: silver;
+}
+.showcase{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* FIXED = PARALLAX --------- SCROLL = NORMAL */
+    background-attachment: fixed;
+    background-image: url(./img/showcase2.jpg);
+    width: 100vw;
+    margin-bottom: 1rem;
+    height: 50vh;
+}
+.showcase-title {
+    font-family: 'Lora';
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 15px;
+}
+.multicolortext {
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+.showcase-title h1{
+    padding-left: 15px;
+    border: 2px, solid, #2c7a7b;
+}
+
+.title{
+    padding-top: 5rem;
+    font-size: 5rem;
+}
+
+/*NOSOTROS------------------*/
+.nosotros{
+    background-image:url(./img/hwa.jpg);
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    width:100vw;
+}
+/*CONTACTO-----------------*/
+.form1{
+    padding: 5px;
+    border-radius: 10px;
+}
+.direccion{
+    border: 2px solid #2c7a7b;
+    border-radius: 10px;
+}
+
+/*RESPONSIVE CSS----------*/
+@media only screen and (max-width: 640px){
+    .nosotros{
+        background-image: url(./img/hwa2.jpg);
+    }
+    .showcase{
+        height: 60vh;
+        background-image: url(./img/showcase1.jpg);
+        background-position: 50% 90%;
+    }
+    .showcase-container{
+        padding: 2rem, 1.25rem !important;
+    }
+    .title{
+        padding-top: 1.75rem;
+    }
+    .navbar-media{
+        margin-bottom:10px;
+    }
+    .social-media{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width:900px) {
+    .title{
+        padding-top: 1.75rem;
+    }
+    .nosotros{
+        background-image: url(./img/hwa3.jpg);
+    }
+    .navbar-media{
+        margin-bottom:10px;
+    }
+    .social-media{
+        display: none;
+    }
+
+}
