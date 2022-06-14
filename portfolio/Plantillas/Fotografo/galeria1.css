@@ -1,0 +1,214 @@
+*{
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.bob{
+    background-image: linear-gradient(#c6ffdd, #fbd786, #f7797d);
+    
+}
+/*
+.titulo{
+    background: -webkit-linear-gradient(left,#c6ffdd, #fbd786, #f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+*/
+.fade_rule {
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 66.0em;
+    margin: 0 auto;
+    background-image: linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+    background-image: -o-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+    background-image: -moz-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+    background-image: -webkit-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+    background-image: -ms-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, #c6ffdd), color-stop(0.5, #fbd786), color-stop(0.98, #f7797d) );
+}
+
+
+
+
+/*NAVBAR-MEDIA----------------*/
+.navbar-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    
+    z-index:4;
+}
+  
+.navbar-media a {
+    display: block;
+    height:30px;
+    width:30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 1px;
+    margin: 3px;
+    border-radius:100%; 
+    box-shadow: #f7797d 2px 2px;
+    background-color: #f12711;
+
+}
+
+i{
+    color:#f5af19;
+}
+  
+.navbar-media a:hover {
+    background: #fbd786;
+    box-shadow: #f7797d 4px 4px;
+    margin-bottom:5px;
+}
+.navbar-media a:active{
+    background: #c6ffdd;
+    box-shadow: #fbd786 4px 4px;
+    margin-bottom:5px;
+}
+
+section, footer {
+    margin-bottom: 30px;
+}
+
+
+.gale:hover {
+    color: #fbd786;
+    
+}
+.gale:active{
+    color: #c6ffdd;
+}
+
+
+/*RESPONSIVE CSS----------*/
+@media only screen and (max-width: 640px){
+
+    .navbar-media{
+        margin-bottom:10px;
+    }
+    .social-media{
+        display: none;
+    }
+    .fade_rule {
+        height: 1px;
+        background-color: #E6E6E6;
+        width: 75%;
+        margin: 0 auto;
+        background-image: linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -o-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -moz-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -webkit-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -ms-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, #c6ffdd), color-stop(0.5, #fbd786), color-stop(0.98, #f7797d) );
+    }
+    
+}
+
+@media only screen and (min-width: 650px) and (max-width:1050px) {
+    .navbar-media{
+        margin-bottom:10px;
+    }
+    .social-media{
+        display: none;
+    }
+    .fade_rule {
+        height: 1px;
+        background-color: #E6E6E6;
+        width: 75%;
+        margin: 0 auto;
+        background-image: linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -o-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -moz-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -webkit-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -ms-linear-gradient(left , #c6ffdd 2%, #fbd786 50%, #f7797d 98%);
+        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, #c6ffdd), color-stop(0.5, #fbd786), color-stop(0.98, #f7797d) );
+    }
+    
+    
+
+}
+
+
+
+
+/*MODAL IMAGES (IMAGENES SE AGRANDAN CUANDO SON CLICKEADAS)*/
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: #fbd786; /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: bl;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover
+  .close:focus {
+    color: rgb(243, 13, 13);
+    text-decoration: none;
+    cursor: pointer;
+  }

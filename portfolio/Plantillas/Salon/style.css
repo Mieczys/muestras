@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --beige: #f6f1d1;
+    --bordeaux: #420c14;
+    --red: #732c2c;
+    --blue: #0b2027;
+    --teal: #38b2ac;
+}
+
+.btn{
+    background: var(--red);
+    color: var(--beige);
+}
+.btn:hover{
+    background: var(--bordeaux);
+}
+
+body{
+    background-color: #F6F1D1;
+}
+/* HEADER */
+.logo{
+    height: 70px;
+}
+header{
+    background-color: var(--beige);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 14;
+}
+
+/* ANCHOR TAGS */
+a.anchor-link{
+    position: relative;
+    top: -90px;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+
+/* SHOWCASE */
+.cta{
+    background-image:  url(./images/showcase1.jpeg);
+    background-size: contain no-repeat;
+    height: 60vh;
+    margin-top: 90px;
+}
+.showcase-text{
+    color: var(--bordeaux);
+    font-size: 2.5rem;
+    background: rgba(45, 17, 17, 0.2);                /* FONDO ROJO CLARO LISTO PARA APLICAR EN CASO DE QUE LAS LETRAS NO SE VEAN */ 
+    border-radius: 15px;
+}
+
+/* NOSOTROS */
+.nosotros img{
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+.user{
+    background-color:var(--red);
+}
+.nosotros-span{
+    background-color:var(--bordeaux);
+}
+
+/* CONTACTO */
+.form{
+    background-color:var(--beige);
+    border: 3px solid var(--bordeaux);
+}
+
+/*-------------------BOTTOM NAVBAR-----------------*/
+.bottom-navbar{
+    background-color: var(--beige);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 13;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.redes{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+  
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px){
+    a.anchor-link{
+        top:-180px;
+    }
+    .cta{
+        margin-top: 175px;
+    }
+    
+}
